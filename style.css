@@ -1,19 +1,12 @@
-/* 1. Cat Container */
 .cat-container {
   display: flex;
-  /* Flexbox layout */
   flex-wrap: wrap;
-  /* Allow cards to wrap */
   justify-content: space-around;
-  /* Even spacing */
   padding: 2em;
-  /* Container padding */
 }
 
-/* 2. Cat Breed Card */
 .cat-breed {
   flex: 1 1 300px;
-  /* Grow/shrink, base width 300px */
   margin: 1em;
   padding: 1em;
   border: 1px solid #ddd;
@@ -21,43 +14,34 @@
   box-shadow: 0 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
   transition: transform 0.3s;
-  /* Smooth hover scaling */
 }
 
-/* 3. Cat Image */
 .cat-breed img {
   max-width: 100%;
   height: auto;
   border-radius: 8px;
 }
 
-/* 4. Cat Heading */
 .cat-breed h3 {
   margin: 0.5em 0;
 }
 
-/* 5. Cat Paragraph */
 .cat-breed p {
   margin: 0.5em 0 1em;
 }
 
-/* 6. Hover effect for cards */
 .cat-breed:hover {
   transform: scale(1.05);
 }
 
-/* 7. Responsive Layout for smaller screens */
 @media (max-width: 768px) {
   .cat-container {
     flex-direction: column;
-    /* Stack cards vertically */
     align-items: center;
-    /* Center horizontally */
   }
 
   .cat-breed {
     flex: 1 1 100%;
-    /* Full width cards */
     max-width: 100%;
   }
 }
